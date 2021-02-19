@@ -1,8 +1,9 @@
-import { useState, useContext } from 'react';
+// import { useState, useContext } from 'react';
+import styles from '../css/AddBlogForm.module.css'
 
 const AddBlogForm = () => {
   return (
-    <div className="className">
+    <div className={styles.AddBlogForm}>
       <h1>This is a page to write and add a blog</h1>
       <form>
         Name: <input type="text" name="author"/>
