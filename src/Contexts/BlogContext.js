@@ -21,9 +21,14 @@ function BlogContextProvider(props) {
 
   const addNewPost = (newPost)=>setPosts([newPost, ...posts]);
 
+  const removePost =(post)=>{
+    setPosts(posts.filter((p)=>p !== post));
+  }
+
   const values ={
     posts,
-    addNewPosts
+    addNewPost,
+    removePost,
   }
   
 
