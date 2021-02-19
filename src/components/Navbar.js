@@ -5,16 +5,11 @@ import Home from './pages/Home';
 
 function Navbar() {
     return (
-      <div className="Navbar">
-            <BrowserRouter>
-            <Switch>
-            <Link to="/">Home </Link>
-
-                </Switch>
-            </BrowserRouter>
-
+      <div className={navbar}>
+      <Link to="/">Home </Link>
+      <Link to="/pages/about">About</Link>
       </div>
-    );
+    )
   }
   
   export default Navbar;
