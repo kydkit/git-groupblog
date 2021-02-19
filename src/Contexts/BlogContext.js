@@ -19,10 +19,14 @@ function BlogContextProvider(props) {
     },
   ]);
 
+  const addNewPost = (newPost)=>setPosts([newPost, ...posts]);
+
   const values ={
     posts,
+    addNewPosts
   }
   
+
   return (
     <div>
       <BlogContext.Provider value={values}>
